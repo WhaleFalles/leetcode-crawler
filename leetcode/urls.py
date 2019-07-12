@@ -1,0 +1,8 @@
+LOGIN = "https://leetcode-cn.com/accounts/login/"
+LOGOUT = "https://leetcode-cn.com/accounts/logout/"
+CHECKIN = "https://leetcode-cn.com/points/api/checkin/"
+PROBLEMS = "https://leetcode-cn.com/api/problems/all/"
+SUBMIT = "https://leetcode-cn.com/problems/%s/submit/"
+SUBMISSION_STATUS = "https://leetcode-cn.com/submissions/detail/%d/check/"
+DESCRIPTION = "https://leetcode-cn.com/problems/%s/description/"
+GRAPHQL = "https://leetcode-cn.com/graphql"
