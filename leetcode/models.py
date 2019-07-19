@@ -43,7 +43,6 @@ class ProblemDetail:
         self.category = dic.get("categoryTitle", None)
         self.title=dic.get('translatedTitle',None)
         self.description = dic.get("translatedContent", None)
-
         self.default_codes: Dict[str, ProblemDetail.DefaultCode] = {}
         for e in json.loads(dic.get("codeDefinition", "[]")):
             self.default_codes[e["value"]] = ProblemDetail.DefaultCode(e)

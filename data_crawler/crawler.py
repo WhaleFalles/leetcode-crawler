@@ -1,7 +1,6 @@
 import sys, os
 
 import time
-
 from injection import inject, find_funcs
 from leetcode.apis import LeetCodeClient
 from leetcode.models import Problem

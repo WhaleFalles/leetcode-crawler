@@ -26,7 +26,7 @@ class LeetCodeClient(LeetCodeSession):
             return -1
 
     def submission_status(self, submission_id: int) -> Submission:
-        r = self.s.get(urls.SUBMISSION_STATUS % submission_id)
+        r = self.s.get(urls.SUBMISSION_STATUS )
         try:
             return Submission(r.json())
         except:
@@ -41,8 +41,10 @@ class LeetCodeClient(LeetCodeSession):
                                  "X-CSRFToken": csrf,
                                  "Content-Type": "application/json"})
         d = {}
+        print(r.json())
         try:
             d = r.json()["data"]["question"]
         except:
             pass
         return ProblemDetail(d or {})
+
