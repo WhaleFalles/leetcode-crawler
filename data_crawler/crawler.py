@@ -1,6 +1,7 @@
 import sys, os
 
 import time
+sys.path.append('..')
 from injection import inject, find_funcs
 from leetcode.apis import LeetCodeClient
 from leetcode.models import Problem
@@ -71,7 +72,7 @@ if __name__ == "__main__":
         print("Login failed.")
         exit()
     problems = c.get_problems()
-    print(problems[1000].id,problems[1000].title_slug)
+    print(problems[1020].id,problems[1020].title_slug)
     print(c.get_problem_detail(problems[37].title_slug).title)
     print('--------')
     print(c.get_problem_detail(problems[3].title_slug).description)

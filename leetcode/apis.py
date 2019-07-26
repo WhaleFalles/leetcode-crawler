@@ -41,7 +41,7 @@ class LeetCodeClient(LeetCodeSession):
                                  "X-CSRFToken": csrf,
                                  "Content-Type": "application/json"})
         d = {}
-        print(r.json())
+
         try:
             d = r.json()["data"]["question"]
         except:

@@ -40,6 +40,7 @@ class ProblemDetail:
             self.code = dic.get("defaultCode", None)
 
     def __init__(self, dic: Dict[str, object]):
+        self.id = dic.get('questionId',None)
         self.category = dic.get("categoryTitle", None)
         self.title=dic.get('translatedTitle',None)
         self.description = dic.get("translatedContent", None)
